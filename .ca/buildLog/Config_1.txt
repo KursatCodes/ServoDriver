@@ -1,0 +1,47 @@
+make -f nbproject/Makefile-Config_1.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory 'C:/Users/ibrah/Desktop/uzmanlar/16f877a i?in/yeni denemeler/HiK_LCD_Project.X'
+rm -f  -r .ca/build/Config_1/production
+rm -f  -r .ca/dist/Config_1/production
+make[1]: Leaving directory 'C:/Users/ibrah/Desktop/uzmanlar/16f877a i?in/yeni denemeler/HiK_LCD_Project.X'
+[32mCLEAN SUCCESSFUL (total time: 152ms)[0m
+make -f nbproject/Makefile-Config_1.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory 'C:/Users/ibrah/Desktop/uzmanlar/16f877a i?in/yeni denemeler/HiK_LCD_Project.X'
+make  -f nbproject/Makefile-Config_1.mk .ca/dist/Config_1/production/HiK_LCD_Project.X.production.hex
+make[2]: Entering directory 'C:/Users/ibrah/Desktop/uzmanlar/16f877a i?in/yeni denemeler/HiK_LCD_Project.X'
+"C:\Program Files\Microchip\xc8\v2.41\bin\xc8-cc.exe"  -mcpu=16F877A -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/main.p1 main.c 
+"C:\Program Files\Microchip\xc8\v2.41\bin\xc8-cc.exe"  -mcpu=16F877A -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/16f877a_Conf.p1 16f877a_Conf.c 
+"C:\Program Files\Microchip\xc8\v2.41\bin\xc8-cc.exe"  -mcpu=16F877A -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/uart_lib.p1 uart_lib.c 
+::: advisory: (2049) C99 compliant libraries are currently not available for baseline or mid-range devices, or for enhanced mid-range devices using a reentrant stack; using C90 libraries
+::: advisory: (2049) C99 compliant libraries are currently not available for baseline or mid-range devices, or for enhanced mid-range devices using a reentrant stack; using C90 libraries
+::: advisory: (2049) C99 compliant libraries are currently not available for baseline or mid-range devices, or for enhanced mid-range devices using a reentrant stack; using C90 libraries
+main.c:107:36: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+        float floatVal = adcValue2 / 255.0;
+              ~~~~~~~~   ~~~~~~~~~~^~~~~~~
+main.c:137:57: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        else if ((FwdFEAD == 1 && FWD==1) || FwdFEAD==1 && REW==0)
+                                          ~~ ~~~~~~~~~~~^~~~~~~~~
+main.c:137:57: note: place parentheses around the '&&' expression to silence this warning
+        else if ((FwdFEAD == 1 && FWD==1) || FwdFEAD==1 && REW==0)
+                                             ~~~~~~~~~~~^~~~~~~~~
+main.c:148:32: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+    int negativeDisplayValue = -displayValue;
+        ~~~~~~~~~~~~~~~~~~~~   ^~~~~~~~~~~~~
+3 warnings generated.
+"C:\Program Files\Microchip\xc8\v2.41\bin\xc8-cc.exe"  -mcpu=16F877A -Wl,-Map=.ca/dist/Config_1/production/HiK_LCD_Project.X.production.map  -DXPRJ_Config_1=Config_1  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto      -Wl,--memorysummary,.ca/dist/Config_1/production/memoryfile.xml -o .ca/dist/Config_1/production/HiK_LCD_Project.X.production.elf  .ca/build/Config_1/production/main.p1 .ca/build/Config_1/production/16f877a_Conf.p1 .ca/build/Config_1/production/uart_lib.p1     
+::: advisory: (2049) C99 compliant libraries are currently not available for baseline or mid-range devices, or for enhanced mid-range devices using a reentrant stack; using C90 libraries
+main.c:85:: warning: (1518) direct function call made with an incomplete prototype (UART_Initialize)
+::: error: (1347) can't find 0x1A words (0x1a withtotal) for psect "text33" in class "CODE" (largest unused contiguous range 0x15)
+Non line specific message::: advisory: (1493) updated 32-bit floating-point routines might trigger "can't find space" messages appearing after updating to this release; consider using the smaller 24-bit floating-point types
+::: error: (1347) can't find 0xE words (0xe withtotal) for psect "text5" in class "CODE" (largest unused contiguous range 0xA)
+::: error: (1347) can't find 0xB words (0xb withtotal) for psect "text31" in class "CODE" (largest unused contiguous range 0xA)
+::: error: (1347) can't find 0x9 words (0x9 withtotal) for psect "text20" in class "CODE" (largest unused contiguous range 0x5)
+(908) exit status = 1
+nbproject/Makefile-Config_1.mk:164: recipe for target '.ca/dist/Config_1/production/HiK_LCD_Project.X.production.hex' failed
+make[2]: Leaving directory 'C:/Users/ibrah/Desktop/uzmanlar/16f877a i?in/yeni denemeler/HiK_LCD_Project.X'
+nbproject/Makefile-Config_1.mk:85: recipe for target '.build-conf' failed
+make[1]: Leaving directory 'C:/Users/ibrah/Desktop/uzmanlar/16f877a i?in/yeni denemeler/HiK_LCD_Project.X'
+nbproject/Makefile-impl.mk:39: recipe for target '.build-impl' failed
+[31mmake[2]: *** [.ca/dist/Config_1/production/HiK_LCD_Project.X.production.hex] Error 1
+make[1]: *** [.build-conf] Error 2
+make: *** [.build-impl] Error 2[0m
+[31mBUÝLD FAILED (exit value 2, total time: 2s)[0m
